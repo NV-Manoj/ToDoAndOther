@@ -11,14 +11,16 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
+
     <div>
+      <NavbarComponent/>
       <Routes>
         <Route path="/" element={<NavbarComponent />} />
         <Route path="/counter" element = {<Counter/>} />
-        <Route path="/toggle" element={<ToggleTheme />} />
+        <Route path="/todoapp" element={<Todo />} />
         <Route path="/basicexample" element={<BasicExample />} />
         <Route path="/toggle" element={<ToggleTheme />} />
-        <Route path="/toggle" element={<ToggleTheme />} />
+        <Route path="/example" element={<BasicExample/>} />
       </Routes>
     </div>
   );
