@@ -8,6 +8,7 @@ import Card from "react-bootstrap/Card";
 import NavbarComponent from "./components/Navbar";
 import Cards from "./components/cards/Cards";
 import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
     <div>
       <NavbarComponent/>
       <Routes>
-        <Route path="/" element={<NavbarComponent />} />
+        <Route path="/" element={<Home />} />
         <Route path="/counter" element = {<Counter/>} />
         <Route path="/todoapp" element={<Todo />} />
         <Route path="/basicexample" element={<BasicExample />} />
